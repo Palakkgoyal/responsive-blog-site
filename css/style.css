@@ -61,7 +61,7 @@ nav ul {
 #hero {
     padding-top: 6em;
     padding-bottom: 1.58em;
-    background: url("images/hero.png");
+    background: url("/images/hero.png");
     background-size: cover;
     color: #ffffff;
     margin-bottom: 2em;
