@@ -1,0 +1,91 @@
+.about-me-main-container {
+    color: #151515;
+}
+
+#my-img {
+    width: 182px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+    object-fit: cover;
+    background: url("images/me.jpg");
+    background-size: 180%;
+    background-position: -130px -80px;
+    box-shadow: 2px 2px 2px skyblue, 5px 5px 5px skyblue, 7px 7px 7px #eee;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+    grid-area: image;
+}
+
+#about-me {
+    grid-area: about-me;
+}
+
+#about-me-title {
+    font-size: 2.125rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+#intro-para {
+    margin-bottom: 2.5em; 
+}
+
+.about-p {
+    margin-top: 1em;
+}
+
+.about-heading {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1.5em
+}
+
+.recent-posts-title {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+@media (min-width: 700px) {
+    .about-me-blog-container {
+        max-width: 950px;
+        margin: auto;
+    }
+    #title2 { grid-area: title2; }
+    #title3 { grid-area: title3; }
+    #blogPara1 { grid-area: blogPara1;}
+    #blogPara2 { grid-area: blogPara2;}
+    #blogPara3 { grid-area: blogPara3;}
+    #blogPara4 { grid-area: blogPara4;}
+    .about-me-blog-container {
+        display: grid;
+        grid-column-gap: 2.5em;
+        grid-template-areas: 
+            "image about-me"
+            "title2 title2"
+            "blogPara1 blogPara1"
+            "blogPara2 blogPara2"
+            "title3 title3"
+            "blogPara3 blogPara3"
+            "blogPara4 blogPara4";
+            
+        align-items: center;
+    }
+    
+    .about-p, .about-heading, #about-me-title {
+        max-width: 800px;
+        margin-inline: auto;
+    }
+    
+    #about-me-title {
+        margin: 0;
+        /* line-height: 0.8; */
+    }
+    
+    #intro-para {
+        margin: 0;
+    }
+}
